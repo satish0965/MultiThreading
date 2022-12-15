@@ -39,6 +39,8 @@ namespace MultithreadEmpPayroll
             employeePayrollOperations.addEmployeeToPayrollWithThread(employees);
             DateTime stopDateTimeThread = DateTime.Now;
             Console.WriteLine("Duration With thread: " + (stopDateTime - StartDateTime));
+
+
         }
     }
 }
