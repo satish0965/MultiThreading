@@ -33,6 +33,12 @@ namespace MultithreadEmpPayroll
             employeePayrollOperations.addEmployeeToPayroll(employees);
             DateTime stopDateTime = DateTime.Now;
             Console.WriteLine("Duration Without thread: " + (stopDateTime - StartDateTime));
+
+            //UC-2 With Thread
+            DateTime StartDateTimeThread = DateTime.Now;
+            employeePayrollOperations.addEmployeeToPayrollWithThread(employees);
+            DateTime stopDateTimeThread = DateTime.Now;
+            Console.WriteLine("Duration With thread: " + (stopDateTime - StartDateTime));
         }
     }
 }

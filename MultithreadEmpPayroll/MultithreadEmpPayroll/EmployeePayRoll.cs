@@ -21,6 +21,24 @@ namespace MultithreadEmpPayroll
             });
             Console.WriteLine(this.employeePolyeeDetailList.ToString());
         }
+        //UC 2
+        public void addEmployeeToPayrollWithThread(List<EmpData> employeePayrollDataList)
+        {
+            employeePayrollDataList.ForEach(employeeData =>
+            {
+                Task thread = new Task(() =>
+                {
+                    //For Every iterarion of foreach loop, every record will get in to thread, every thread will be
+                    //running in a single process to make execution quick and fast.
+
+                    Console.WriteLine("Employee Being Added :" + employeeData.EmployeeName);
+                    this.addEmployeeToPayroll(employeeData);
+                    Console.WriteLine("Employee added : " + employeeData.EmployeeName);
+                });
+                thread.Start();
+            });
+            Console.WriteLine(this.employeePolyeeDetailList.Count);
+        }
         public void addEmployeeToPayroll(EmpData emp)
         {
             employeePolyeeDetailList.Add(emp);
