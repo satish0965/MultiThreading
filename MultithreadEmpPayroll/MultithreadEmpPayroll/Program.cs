@@ -20,49 +20,47 @@ namespace MultithreadEmpPayroll
 
 //With Thread Process The Employees details are not added as sequential manner.
 /*
- Standard Output: 
-Employee Being Added :Eren
-Employee added : Eren ( Duration  : 00:00:00.0003938)
-Employee Being Added :Levi
-Employee added : Levi ( Duration  : 00:00:00.0000007)
-Employee Being Added :Mikasa
-Employee added : Mikasa ( Duration  : 00:00:00.0000003)
-Employee Being Added :Naruto
-Employee added : Naruto ( Duration  : 00:00:00.0000002)
-Employee Being Added :Sasuke
-Employee added : Sasuke ( Duration  : 00:00:00.0000009)
-Employee Being Added :Madara
-Employee added : Madara ( Duration  : 00:00:00.0000003)
-Employee Being Added :Luffy
-Employee added : Luffy ( Duration  : 00:00:00.0000002)
-Employee Being Added :Zorro
-Employee added : Zorro ( Duration  : 00:00:00.0000002)
-Employee Being Added :Nami
-Employee added : Nami ( Duration  : 00:00:00.0000005)
-Employee Being Added :Naruto
-Employee added : Naruto ( Duration  : 00:00:00.0000002)
-System.Collections.Generic.List`1[MultithreadEmpPayroll.EmpData]
-Duration Without thread: 00:00:00.0008998
+Standard Output: 
+Payment Being Added  :25000, Deduction Added : 200 ,TaxablePay Added : 200, Tax Added : 100, NetPay Added : 24000
+Payment added : 25000, Deduction Added : 200 ,TaxablePay Added : 200, Tax Added : 100, NetPay Added : 24000 ( Duration  : 00:00:00.0006808)
+Payment Being Added  :250000, Deduction Added : 2000 ,TaxablePay Added : 2000, Tax Added : 1000, NetPay Added : 240000
+Payment added : 250000, Deduction Added : 2000 ,TaxablePay Added : 2000, Tax Added : 1000, NetPay Added : 240000 ( Duration  : 00:00:00.0000027)
+Payment Being Added  :20000, Deduction Added : 200 ,TaxablePay Added : 200, Tax Added : 100, NetPay Added : 19000
+Payment added : 20000, Deduction Added : 200 ,TaxablePay Added : 200, Tax Added : 100, NetPay Added : 19000 ( Duration  : 00:00:00.0000018)
+Payment Being Added  :550000, Deduction Added : 300 ,TaxablePay Added : 100, Tax Added : 100, NetPay Added : 540000
+Payment added : 550000, Deduction Added : 300 ,TaxablePay Added : 100, Tax Added : 100, NetPay Added : 540000 ( Duration  : 00:00:00.0000014)
+Payment Being Added  :500000, Deduction Added : 300 ,TaxablePay Added : 100, Tax Added : 100, NetPay Added : 490000
+Payment added : 500000, Deduction Added : 300 ,TaxablePay Added : 100, Tax Added : 100, NetPay Added : 490000 ( Duration  : 00:00:00.0000020)
+Payment Being Added  :650000, Deduction Added : 500 ,TaxablePay Added : 1000, Tax Added : 10000, NetPay Added : 640000
+Payment added : 650000, Deduction Added : 500 ,TaxablePay Added : 1000, Tax Added : 10000, NetPay Added : 640000 ( Duration  : 00:00:00.0000015)
+Payment Being Added  :50000, Deduction Added : 300 ,TaxablePay Added : 100, Tax Added : 100, NetPay Added : 40000
+Payment added : 50000, Deduction Added : 300 ,TaxablePay Added : 100, Tax Added : 100, NetPay Added : 40000 ( Duration  : 00:00:00.0000014)
+Payment Being Added  :40000, Deduction Added : 300 ,TaxablePay Added : 100, Tax Added : 100, NetPay Added : 40000
+Payment added : 40000, Deduction Added : 300 ,TaxablePay Added : 100, Tax Added : 100, NetPay Added : 40000 ( Duration  : 00:00:00.0000013)
+Payment Being Added  :460000, Deduction Added : 300 ,TaxablePay Added : 100, Tax Added : 100, NetPay Added : 45000
+Payment added : 460000, Deduction Added : 300 ,TaxablePay Added : 100, Tax Added : 100, NetPay Added : 45000 ( Duration  : 00:00:00.0000014)
+Payment Being Added  :550000, Deduction Added : 300 ,TaxablePay Added : 100, Tax Added : 100, NetPay Added : 540000
+Payment added : 550000, Deduction Added : 300 ,TaxablePay Added : 100, Tax Added : 100, NetPay Added : 540000 ( Duration  : 00:00:00.0000014)
+System.Collections.Generic.List`1[MultithreadEmpPayroll.PayrollDetails]
 10
-Duration With thread: 00:00:00.0008998
-Employee Being Added :Luffy
-Employee added : Luffy ( Duration : 00:00:00.0003222)
-Employee Being Added :Eren
-Employee Being Added :Zorro
-Employee added : Zorro ( Duration : 00:00:00.0000012)
-Employee Being Added :Nami
-Employee added : Nami ( Duration : 00:00:00.0000003)
-Employee Being Added :Naruto
-Employee added : Eren ( Duration : 00:00:00.0003626)
-Employee added : Naruto ( Duration : 00:00:00.0000017)
-Employee Being Added :Levi
-Employee added : Levi ( Duration : 00:00:00.0003370)
-Employee Being Added :Naruto
-Employee added : Naruto ( Duration : 00:00:00.0003452)
-Employee Being Added :Mikasa
-Employee added : Mikasa ( Duration : 00:00:00.0003420)
-Employee Being Added :Sasuke
-Employee added : Sasuke ( Duration : 00:00:00.0004017)
-Employee Being Added :Madara
-Employee added : Madara ( Duration : 00:00:00.0004014)
+Basic Added  : 25000, Deduction Added : 200 ,TaxablePay Added : 200, Tax Added : 100, NetPay Added : 24000
+Basic added : 25000, Deduction Added : 200 ,TaxablePay Added : 200, Tax Added : 100, NetPay Added : 24000 ( Duration : 00:00:00.0000092)
+Basic Added  : 40000, Deduction Added : 300 ,TaxablePay Added : 100, Tax Added : 100, NetPay Added : 40000
+Basic added : 40000, Deduction Added : 300 ,TaxablePay Added : 100, Tax Added : 100, NetPay Added : 40000 ( Duration : 00:00:00.0000021)
+Basic Added  : 460000, Deduction Added : 300 ,TaxablePay Added : 100, Tax Added : 100, NetPay Added : 45000
+Basic added : 460000, Deduction Added : 300 ,TaxablePay Added : 100, Tax Added : 100, NetPay Added : 45000 ( Duration : 00:00:00.0000015)
+Basic Added  : 550000, Deduction Added : 300 ,TaxablePay Added : 100, Tax Added : 100, NetPay Added : 540000
+Basic Added  : 550000, Deduction Added : 300 ,TaxablePay Added : 100, Tax Added : 100, NetPay Added : 540000
+Basic Added  : 250000, Deduction Added : 2000 ,TaxablePay Added : 2000, Tax Added : 1000, NetPay Added : 240000
+Basic added : 550000, Deduction Added : 300 ,TaxablePay Added : 100, Tax Added : 100, NetPay Added : 540000 ( Duration : 00:00:00.0000172)
+Basic Added  : 500000, Deduction Added : 300 ,TaxablePay Added : 100, Tax Added : 100, NetPay Added : 490000
+Basic added : 250000, Deduction Added : 2000 ,TaxablePay Added : 2000, Tax Added : 1000, NetPay Added : 240000 ( Duration : 00:00:00.0000175)
+Basic Added  : 650000, Deduction Added : 500 ,TaxablePay Added : 1000, Tax Added : 10000, NetPay Added : 640000
+Basic added : 500000, Deduction Added : 300 ,TaxablePay Added : 100, Tax Added : 100, NetPay Added : 490000 ( Duration : 00:00:00.0000099)
+Basic added : 650000, Deduction Added : 500 ,TaxablePay Added : 1000, Tax Added : 10000, NetPay Added : 640000 ( Duration : 00:00:00.0000060)
+Basic added : 550000, Deduction Added : 300 ,TaxablePay Added : 100, Tax Added : 100, NetPay Added : 540000 ( Duration : 00:00:00.0000014)
+Basic Added  : 20000, Deduction Added : 200 ,TaxablePay Added : 200, Tax Added : 100, NetPay Added : 19000
+Basic Added  : 50000, Deduction Added : 300 ,TaxablePay Added : 100, Tax Added : 100, NetPay Added : 40000
+Basic added : 20000, Deduction Added : 200 ,TaxablePay Added : 200, Tax Added : 100, NetPay Added : 19000 ( Duration : 00:00:00.0000060)
+Basic added : 50000, Deduction Added : 300 ,TaxablePay Added : 100, Tax Added : 100, NetPay Added : 40000 ( Duration : 00:00:00.0000035)
  */
